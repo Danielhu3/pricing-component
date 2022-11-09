@@ -10,6 +10,7 @@ export const Card = styled.div`
                         'additional-info';
 
     gap: 2.5rem;
-    padding: 3.6rem;
+    padding: 5rem;
     width: 50rem;
+
 `
