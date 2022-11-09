@@ -20,6 +20,14 @@ export default createGlobalStyle`
     }
 
     .App{
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        height: 100vh;
+
+        gap: 3rem;
     }
 `
