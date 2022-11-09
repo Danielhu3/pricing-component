@@ -7,14 +7,16 @@ import  Card  from './components/card/';
 import  PaymentDiscount  from './components/paymentDiscount/';
 import PaymentInfo  from './components/paymentInfo/';
 import  PaymentType  from './components/paymentType/';
+import  PlanBillingType  from './components/planBillingType/';
 import  PlanInfo  from './components/planInfo/';
 import  PlanPageviews  from './components/planPageviews/';
-import  PlanPrice  from './components/planPrice/';
+import  PlanBillingPrice  from './components/planBillingPrice/';
 import  Range  from './components/range/';
 import TextComponent  from './components/textComponent/';
 import TextParagraph  from './components/textParagraph/';
 import TextTitle  from './components/textTitle/';
 import GlobalStyle from './styles/global'
+import PlanBilling  from './components/PlanBilling/';
 
 function App() {
   return (
@@ -29,7 +31,11 @@ function App() {
       <Card>
         <PlanInfo>
           <PlanPageviews />
-          <PlanPrice />
+          <PlanBilling>
+            <PlanBillingPrice />
+            <PlanBillingType />
+          </PlanBilling>
+         
         </PlanInfo>
 
         <Range />
