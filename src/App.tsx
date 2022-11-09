@@ -66,13 +66,4 @@ export default App;
 
   -> on mobile more rows will be created
   
-
-
- 
-
-  
-  
-  
-
-  Start my trial
 */
