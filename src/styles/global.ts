@@ -1,4 +1,5 @@
 import {createGlobalStyle} from 'styled-components'
+import background from '../images/bg-pattern.svg'
 
 export default createGlobalStyle`
 
@@ -25,9 +26,17 @@ export default createGlobalStyle`
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
+        gap: 3rem;
 
         height: 100vh;
 
-        gap: 3rem;
+        background:hsl(230, 100%, 99%);
+        background: url(${background});
+        background-repeat: no-repeat;
+        
+
+        
+
+
     }
 `
