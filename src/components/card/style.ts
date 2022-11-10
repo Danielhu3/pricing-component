@@ -7,6 +7,7 @@ export const Card = styled.div`
     grid-template-areas: 'plan-info'
                         'range'
                         'payment-select'
+                        'horizontal-row'
                         'additional-info';
 
     gap: 2.5rem;

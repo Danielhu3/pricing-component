@@ -17,6 +17,7 @@ import TextParagraph  from './components/textParagraph/';
 import TextTitle  from './components/textTitle/';
 import GlobalStyle from './styles/global'
 import PlanBilling  from './components/PlanBilling/';
+import  HorizontalRow  from './components/horizontalRow/';
 
 function App() {
   return (
@@ -46,6 +47,8 @@ function App() {
           <PaymentDiscount></PaymentDiscount>
         </PaymentInfo>
 
+        <HorizontalRow />
+
         <AdditionalInfo>
           <AdditionalInfoItems>
             <AdditionalInfoItem>Unlimited websites</AdditionalInfoItem>
@@ -68,6 +71,7 @@ export default App;
   - plan info
   - range
   - payment select
+  - horizontal row
   - additional info
 
   -> on mobile more rows will be created
