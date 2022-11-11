@@ -11,7 +11,7 @@ export const Card = styled.div`
                         'additional-info';
 
     gap: 2.5rem;
-    padding: 5rem;
+    padding: 4rem 5rem;
     width: 50rem;
 
 `

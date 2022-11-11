@@ -18,6 +18,9 @@ import TextTitle  from './components/textTitle/';
 import GlobalStyle from './styles/global'
 import PlanBilling  from './components/PlanBilling/';
 import  HorizontalRow  from './components/horizontalRow/';
+import  PaymentRadioInput  from './components/paymentRadioInput';
+import  PaymentRadioLabel  from './components/paymentRadioLabel/';
+import  PaymentRadioSpan  from './components/paymentRadioSpan/';
 
 function App() {
   return (
@@ -43,6 +46,12 @@ function App() {
 
         <PaymentInfo>
           <PaymentType>Monthly Billing</PaymentType>
+
+          <PaymentRadioLabel>
+            <PaymentRadioInput />
+            <PaymentRadioSpan />
+          </PaymentRadioLabel>
+
           <PaymentType>Yearly Billing</PaymentType>
           <PaymentDiscount></PaymentDiscount>
         </PaymentInfo>

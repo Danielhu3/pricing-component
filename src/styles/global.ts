@@ -10,6 +10,7 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Manrope', sans-serif;
+        box-sizing: border-box;
     }
     html{
         font-size: 62.5%;
@@ -33,6 +34,8 @@ export default createGlobalStyle`
         background:hsl(230, 100%, 99%);
         background: url(${background});
         background-repeat: no-repeat;
+
+        
         
 
         
