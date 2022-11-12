@@ -6,7 +6,7 @@ export const PaymentRadioLabel = styled.label`
     height: 2.2rem;
 
 
-    input:checked + span{
+    input:checked + span, input:hover + span{
         background-color: hsl(174, 86%, 45%);
     }
 

@@ -7,4 +7,10 @@ export const AdditionalInfoButton = styled.button`
     border: none;
     border-radius: 2rem;
     cursor: pointer;
+
+    transition: .4s;
+
+    &:hover{
+        color: white;
+    }
 `
