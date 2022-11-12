@@ -1,9 +1,12 @@
 import React from 'react'
 import { PlanPageviews } from './style'
 
-const index = () => {
+type Props = {
+  pageviews: string;
+}
+const index = ({pageviews}:Props) => {
   return (
-    <PlanPageviews>100k PAGEVIEWS</PlanPageviews>
+    <PlanPageviews>{pageviews} PAGEVIEWS</PlanPageviews>
   )
 }
 

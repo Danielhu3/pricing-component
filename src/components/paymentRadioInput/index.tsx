@@ -9,10 +9,9 @@ const Index = () => {
 
   function handleChange(event: HandleChangeInterface){
     setChecked(event.target.checked);
-    console.log(checked)
   }
   return (
-    <PaymentRadioInput type='checkbox' aria-checked='false' checked={checked} onChange={handleChange}></PaymentRadioInput>
+    <PaymentRadioInput type='checkbox' aria-checked={checked} checked={checked} onChange={handleChange}></PaymentRadioInput>
   )
 }
 

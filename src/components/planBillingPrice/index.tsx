@@ -1,9 +1,12 @@
 import React from 'react'
 import { PlanBillingPrice } from './style'
 
-const index = () => {
+type Props = {
+  price:number;
+}
+const index = ({price}:Props) => {
   return (
-    <PlanBillingPrice>$16.00</PlanBillingPrice>
+    <PlanBillingPrice>${price}.00</PlanBillingPrice>
   )
 }
 

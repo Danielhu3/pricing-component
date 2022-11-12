@@ -22,7 +22,51 @@ import  PaymentRadioInput  from './components/paymentRadioInput';
 import  PaymentRadioLabel  from './components/paymentRadioLabel/';
 import  PaymentRadioSpan  from './components/paymentRadioSpan/';
 
+const plans = [
+  {
+    pageviews: '10K',
+    price: 8
+  },
+
+  {
+    pageviews: '50K',
+    price: 12
+  },
+
+  {
+    pageviews: '100K',
+    price: 16
+  },
+  
+  {
+    pageviews: '500K',
+    price: 24
+  },
+  
+  {
+    pageviews: '1M',
+    price: 36
+  },
+  
+
+]
 function App() {
+  const [rangeValue,setRangeValue] = React.useState(2);
+  const [pageviews,setPageviews] = React.useState('')
+  const [price,setPrice] = React.useState(0)
+
+  React.useEffect(()=>{
+    const actualPlan= plans.at(rangeValue);
+    if(actualPlan){
+      setPageviews(actualPlan.pageviews)
+      setPrice(actualPlan.price)
+    }
+    
+    
+    
+  },[rangeValue])
+
+
   return (
     <div className="App">
       <GlobalStyle />
@@ -34,15 +78,15 @@ function App() {
 
       <Card>
         <PlanInfo>
-          <PlanPageviews />
+          <PlanPageviews pageviews={pageviews}/>
           <PlanBilling>
-            <PlanBillingPrice />
+            <PlanBillingPrice price={price} />
             <PlanBillingType />
           </PlanBilling>
          
         </PlanInfo>
 
-        <Range />
+        <Range rangeValue={rangeValue} setRangeValue={setRangeValue}/>
 
         <PaymentInfo>
           <PaymentType>Monthly Billing</PaymentType>

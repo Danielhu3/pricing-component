@@ -1,10 +1,25 @@
 import React from 'react'
 import { Range } from './style'
 
-const index = () => {
+type Props = {
+  rangeValue:number;
+  setRangeValue: React.Dispatch<React.SetStateAction<number>>;
+}
+const Index = ({rangeValue, setRangeValue}: Props) => {
+
+  interface Event {
+    target: HTMLInputElement;
+  }
+  function handleChange(e:Event){
+    setRangeValue(Number(e.target.value))
+    console.log(rangeValue)
+
+  }
+
+  
   return (
-    <Range type='range'></Range>
+    <Range type='range' min='0' max='4' step='1' value={rangeValue} onChange={(e)=> handleChange(e)}></Range>
   )
 }
 
-export default index
+export default Index
