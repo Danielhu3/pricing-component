@@ -14,4 +14,6 @@ export const Card = styled.div`
     padding: 4rem 5rem;
     width: 50rem;
 
+    border-radius: 1rem;
+
 `
