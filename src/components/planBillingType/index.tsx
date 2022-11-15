@@ -1,9 +1,12 @@
 import React from 'react'
 import { PlanBillingType } from './style'
 
-const index = () => {
+type Props = {
+  yearlyBilling: boolean;
+}
+const index = ({yearlyBilling}: Props) => {
   return (
-    <PlanBillingType>/ month</PlanBillingType>
+    <PlanBillingType>/ {yearlyBilling ? 'year' : 'month'}</PlanBillingType>
   )
 }
 

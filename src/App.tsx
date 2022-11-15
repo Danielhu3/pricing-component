@@ -54,6 +54,7 @@ function App() {
   const [rangeValue,setRangeValue] = React.useState(2);
   const [pageviews,setPageviews] = React.useState('')
   const [price,setPrice] = React.useState(0)
+  const [yearlyBilling, setYearlyBilling] = React.useState(false)
 
   React.useEffect(()=>{
     const actualPlan= plans.at(rangeValue);
@@ -62,9 +63,11 @@ function App() {
       setPrice(actualPlan.price)
     }
     
-    
-    
   },[rangeValue])
+
+  React.useEffect(()=>{
+    console.log(yearlyBilling)
+  },[yearlyBilling])
 
 
   return (
@@ -80,8 +83,8 @@ function App() {
         <PlanInfo>
           <PlanPageviews pageviews={pageviews}/>
           <PlanBilling>
-            <PlanBillingPrice price={price} />
-            <PlanBillingType />
+            <PlanBillingPrice price={price} yearlyBilling = {yearlyBilling} />
+            <PlanBillingType yearlyBilling = {yearlyBilling}/>
           </PlanBilling>
          
         </PlanInfo>
@@ -92,7 +95,7 @@ function App() {
           <PaymentType>Monthly Billing</PaymentType>
 
           <PaymentRadioLabel>
-            <PaymentRadioInput />
+            <PaymentRadioInput setYearlyBilling={setYearlyBilling} />
             <PaymentRadioSpan />
           </PaymentRadioLabel>
 
