@@ -104,6 +104,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Checkbox Toggle Slider](https://codepen.io/AllThingsSmitty/pen/MmxxOz/) - This helped me build the toggle checkbox css to alternate between monthly and yearly.
 
+- [Range input Filling](https://codepen.io/geno-code/pen/BaLrKLM) - This helped me build the range input css.
+
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 

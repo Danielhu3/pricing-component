@@ -1,18 +1,15 @@
 import styled from "styled-components";
+import icon from '../../images/icon-slider.svg';
 export const Range = styled.input.attrs((props: {value: number}) => props)`
     grid-area: range;
     
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    //width: 100%;
     height: 0.8rem;
-    //background: hsl(224, 65%, 95%);
     border-radius: 0.8rem;
     outline: none;
-    
-
-        background: ${(props) =>
+    background: ${(props) =>
             `linear-gradient(to right,
              hsl(174, 77%, 80%) 0%,
              hsl(174, 77%, 80%) ${props.value *25}%,
@@ -26,10 +23,17 @@ export const Range = styled.input.attrs((props: {value: number}) => props)`
         -webkit-appearance: none;
         height: 3.5rem;
         width: 3.5rem;
+
         background-color: hsl(174, 86%, 45%);
+        background-image: url(${icon});
+        background-repeat: no-repeat;
+        background-position:center;
+
         box-shadow: 3px 10px 5px 5px hsla(174, 77%, 80%, 0.4);
         border-radius: 50%;
         cursor: pointer;
+
+
         
         &:active{
             cursor: grabbing;
