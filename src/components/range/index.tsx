@@ -12,7 +12,6 @@ const Index = ({rangeValue, setRangeValue}: Props) => {
   }
   function handleChange(e:Event){
     setRangeValue(Number(e.target.value))
-    console.log(rangeValue)
 
   }
 

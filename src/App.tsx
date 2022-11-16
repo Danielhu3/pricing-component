@@ -65,9 +65,6 @@ function App() {
     
   },[rangeValue])
 
-  React.useEffect(()=>{
-    console.log(yearlyBilling)
-  },[yearlyBilling])
 
 
   return (
