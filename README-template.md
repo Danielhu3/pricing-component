@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Danielhu3/pricing-component)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://jade-dolphin-6b66a1.netlify.app/)
 
 ## My process
 
