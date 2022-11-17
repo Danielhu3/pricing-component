@@ -8,4 +8,8 @@ export const AdditionalInfoItems = styled.ul`
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+
+    @media screen and (max-width:770px){
+        align-items: center;
+    }
 `

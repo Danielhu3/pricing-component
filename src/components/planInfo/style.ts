@@ -4,4 +4,7 @@ export const PlanInfo = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: min(2rem);
+
+    
 `

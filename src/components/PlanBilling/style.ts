@@ -4,5 +4,6 @@ export const PlanBilling = styled.div`
     flex-wrap: nowrap;
     gap: 0.5rem;
     align-items: center;
+
     
 `

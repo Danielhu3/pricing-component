@@ -1,26 +1,26 @@
 import React from 'react';
-import  AdditionalInfo  from './components/additionalInfo/';
-import  AdditionalInfoButton from './components/additionalInfoButton/';
-import  AdditionalInfoItem  from './components/additionalInfoItem/';
-import  AdditionalInfoItems  from './components/additionalInfoItems/';
-import  Card  from './components/card/';
-import  PaymentDiscount  from './components/paymentDiscount/';
+import AdditionalInfo  from './components/additionalInfo/';
+import AdditionalInfoButton from './components/additionalInfoButton/';
+import AdditionalInfoItem  from './components/additionalInfoItem/';
+import AdditionalInfoItems  from './components/additionalInfoItems/';
+import Card  from './components/card/';
+import PaymentDiscount  from './components/paymentDiscount/';
 import PaymentInfo  from './components/paymentInfo/';
-import  PaymentType  from './components/paymentType/';
-import  PlanBillingType  from './components/planBillingType/';
-import  PlanInfo  from './components/planInfo/';
-import  PlanPageviews  from './components/planPageviews/';
-import  PlanBillingPrice  from './components/planBillingPrice/';
-import  Range  from './components/range/';
+import PaymentType  from './components/paymentType/';
+import PlanBillingType  from './components/planBillingType/';
+import PlanInfo  from './components/planInfo/';
+import PlanPageviews  from './components/planPageviews/';
+import PlanBillingPrice  from './components/planBillingPrice/';
+import Range  from './components/range/';
 import TextComponent  from './components/textComponent/';
 import TextParagraph  from './components/textParagraph/';
 import TextTitle  from './components/textTitle/';
 import GlobalStyle from './styles/global'
 import PlanBilling  from './components/PlanBilling/';
-import  HorizontalRow  from './components/horizontalRow/';
-import  PaymentRadioInput  from './components/paymentRadioInput';
-import  PaymentRadioLabel  from './components/paymentRadioLabel/';
-import  PaymentRadioSpan  from './components/paymentRadioSpan/';
+import HorizontalRow  from './components/horizontalRow/';
+import PaymentRadioInput  from './components/paymentRadioInput';
+import PaymentRadioLabel  from './components/paymentRadioLabel/';
+import PaymentRadioSpan  from './components/paymentRadioSpan/';
 
 const plans = [
   {
@@ -65,11 +65,23 @@ function App() {
     
   },[rangeValue])
 
+  const [width, setWidth] = React.useState(window.innerWidth);
+
+  function updateWidth(){
+    setWidth(window.innerWidth)
+  }
+
+  React.useEffect(()=>{
+    window.addEventListener("resize", updateWidth)
+    return () => window.removeEventListener("resize", updateWidth);
+  },[width])
+
 
 
   return (
     <div className="App">
       <GlobalStyle />
+  
 
       <TextComponent>
         <TextTitle />
@@ -97,7 +109,7 @@ function App() {
           </PaymentRadioLabel>
 
           <PaymentType>Yearly Billing</PaymentType>
-          <PaymentDiscount></PaymentDiscount>
+          <PaymentDiscount>{width > 570 ? '25% discount': '-25%'}</PaymentDiscount>
         </PaymentInfo>
 
         <HorizontalRow />
@@ -113,6 +125,7 @@ function App() {
         </AdditionalInfo>
 
       </Card>
+      
   
     </div>
   );

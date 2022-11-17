@@ -4,4 +4,10 @@ export const AdditionalInfo = styled.div`
 
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width:570px){
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
     `

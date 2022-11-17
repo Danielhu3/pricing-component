@@ -25,21 +25,29 @@ export default createGlobalStyle`
         display: flex;
         justify-content: center;
         align-items: center;
+        
         flex-direction: column;
         flex-wrap: wrap;
         gap: 3rem;
+        
 
         height: 100vh;
 
         background:hsl(230, 100%, 99%);
-        background: url(${background});
+        background-image: url(${background});
         background-repeat: no-repeat;
 
-        
-        
-
-        
-
-
     }
+
+    @media screen and (max-width:570px){
+        .App{
+            padding: 0 2rem;
+        }
+    }
+    
+   
+
+    
+
+   
 `

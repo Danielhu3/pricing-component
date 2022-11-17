@@ -16,4 +16,18 @@ export const Card = styled.div`
 
     border-radius: 1rem;
 
+
+    @media screen and (max-width:570px){
+        grid-template-areas: 'pageviews'
+                             'range'
+                             'plan-info'
+                             'payment-select'
+                             'horizontal-row'
+                             'additional-info';
+        
+        width: 40rem;
+        width: auto;
+
+    }
+
 `

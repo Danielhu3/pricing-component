@@ -1,12 +1,12 @@
 import React from 'react'
-import { PaymentDiscount } from './style'
+import { Container } from './style'
 
 type Props = {
-  children: string;
+    children: JSX.Element[];
 }
 const index = ({children}: Props) => {
   return (
-    <PaymentDiscount>{children}</PaymentDiscount>
+    <Container>{children}</Container>
   )
 }
 
