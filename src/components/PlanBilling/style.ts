@@ -7,5 +7,9 @@ export const PlanBilling = styled.div`
 
    grid-area: plan-info;
    justify-self: end;
+
+   @media screen and (max-width:570px){
+    justify-self: center;
+   }
     
 `
