@@ -8,7 +8,6 @@ import PaymentDiscount  from './components/paymentDiscount/';
 import PaymentInfo  from './components/paymentInfo/';
 import PaymentType  from './components/paymentType/';
 import PlanBillingType  from './components/planBillingType/';
-import PlanInfo  from './components/planInfo/';
 import PlanPageviews  from './components/planPageviews/';
 import PlanBillingPrice  from './components/planBillingPrice/';
 import Range  from './components/range/';
@@ -89,13 +88,13 @@ function App() {
       </TextComponent>
 
       <Card>
-        <PlanInfo>
+       
           <PlanPageviews pageviews={pageviews}/>
           <PlanBilling>
             <PlanBillingPrice price={price} yearlyBilling = {yearlyBilling} />
             <PlanBillingType yearlyBilling = {yearlyBilling}/>
           </PlanBilling>
-        </PlanInfo>
+        
 
         <Range rangeValue={rangeValue} setRangeValue={setRangeValue}/>
 
