@@ -5,5 +5,6 @@ export const PlanBilling = styled.div`
     gap: 0.5rem;
     align-items: center;
 
+   
     
 `

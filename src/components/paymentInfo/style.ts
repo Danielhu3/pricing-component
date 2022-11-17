@@ -9,4 +9,8 @@ export const PaymentInfo = styled.div`
     
     align-items: center;
 
+    @media screen and (max-width:570px){
+        justify-content: center;
+    }
+
 `

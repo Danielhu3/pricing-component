@@ -106,6 +106,9 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Range input Filling](https://codepen.io/geno-code/pen/BaLrKLM) - This helped me build the range input css.
 
+- [Get window dimensions](https://stackoverflow.com/questions/36862334/get-viewport-window-height-in-reactjs) - This helped me get window's width to apply mobile modifiers.
+
+
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 

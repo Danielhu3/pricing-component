@@ -95,7 +95,6 @@ function App() {
             <PlanBillingPrice price={price} yearlyBilling = {yearlyBilling} />
             <PlanBillingType yearlyBilling = {yearlyBilling}/>
           </PlanBilling>
-         
         </PlanInfo>
 
         <Range rangeValue={rangeValue} setRangeValue={setRangeValue}/>
